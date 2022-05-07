@@ -1,0 +1,26 @@
+<div class="mb-3">
+    <form class="col-6" action="">
+        <div class="my-3">
+            <label for="exampleFormControlInput1" class="form-label">Kitob nomi</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="my-3">
+            <label for="exampleFormControlInput1" class="form-label">Kitob Muallifi</label>
+            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+        </div>
+        <div class="my-3">
+            <label for="exampleFormControlInput1" class="form-label">Kitob pages</label>
+            <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+        </div>
+        
+        <input type="submit" class="form-control" id="exampleFormControl" placeholder="name@example.com">
+    </form>
+</div>
+
+{{#if books}}
+{{#each books}}
+<li>Kitob nomi {{name}}, Kitob Muallifi {{author}}, Kitob varogi {{pages}} </li>
+{{/each}}
+{{else}}
+<h1>Books data yo'q</h1>
+{{/if}}
